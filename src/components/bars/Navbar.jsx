@@ -21,7 +21,7 @@ const Navbar = () => {
               <Link to="/">App Overview</Link>
             </ListItem>
             <ListItem>
-              <Link to="/download">Downlaod Guide</Link>
+              <Link to="/download">Download Guide</Link>
             </ListItem>
             <ListItem>
               <Link to="/our-team/sponsors">Project Sponsors</Link>

@@ -49,12 +49,12 @@ export default function LargeWithAppLinksAndSocial() {
 
           <Stack align={'flex-start'}>
             <ListHeader>Our Team</ListHeader>
-            <Link href={'/our-team/sponsors'}>Project Sponsors</Link>
-            <Link href={'/our-team/developers'}>Developers</Link>
+            <Link to={'/our-team/sponsors'}>Project Sponsors</Link>
+            <Link to={'/our-team/developers'}>Developers</Link>
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Install App</ListHeader>
+            <ListHeader>Install App On</ListHeader>
             <AppStoreBadge />
             <PlayStoreBadge />
           </Stack>
@@ -75,16 +75,16 @@ export default function LargeWithAppLinksAndSocial() {
           align={{ md: 'center' }}>
           <Text>&copy; {new Date().getFullYear()} APSU - College of STEM - All rights reserved.</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Github'} href={'https://github.com/apsu-math-trails'}>
+            <SocialButton label={'Github'} target='_blank' href={'https://github.com/apsu-math-trails'}>
               <FaGithub />
             </SocialButton>
-            <SocialButton label={'Twitter'} href={'https://twitter.com/apsucostem'}>
+            <SocialButton label={'Twitter'} target='_blank' href={'https://twitter.com/apsucostem'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'https://www.instagram.com/apsucostem/?hl=en'}>
+            <SocialButton label={'Instagram'} target='_blank' href={'https://www.instagram.com/apsucostem/?hl=en'}>
               <FaInstagram />
             </SocialButton>
-            <SocialButton label={'Facebook'} href={'https://www.facebook.com/APSUCoSTEM/'}>
+            <SocialButton label={'Facebook'} target='_blank' href={'https://www.facebook.com/APSUCoSTEM/'}>
               <FaFacebook />
             </SocialButton>
           </Stack>
