@@ -44,7 +44,7 @@ export default function LargeWithAppLinksAndSocial() {
             <Link to={'/'}>History</Link>
             <Link to={'/'}>Features</Link>
             <Link to={'/'}>Benefits</Link>
-            <a href={'https://github.com/apsu-math-trails'}>GitHub Repo</a>
+            <a target='_blank' href={'https://github.com/apsu-math-trails'}>GitHub Repo</a>
           </Stack>
 
           <Stack align={'flex-start'}>
