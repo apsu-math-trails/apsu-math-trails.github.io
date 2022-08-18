@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
     title: 'Apsu Math Trails - Official Site',
     description: `Offical website for APSU College of STEM's Math Trails mobile app`,
+    image: `/gatsby-icon.png`,
   },
   plugins: [
     'gatsby-transformer-sharp',
