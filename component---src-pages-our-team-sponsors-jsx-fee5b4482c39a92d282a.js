@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[794],{6640:function(e,t,l){l.r(t);var r=l(7294),n=l(5696);t.default=function(){return r.createElement(n.Z,null,r.createElement("h1",null,"Sponsors"))}}}]);
+//# sourceMappingURL=component---src-pages-our-team-sponsors-jsx-fee5b4482c39a92d282a.js.map
