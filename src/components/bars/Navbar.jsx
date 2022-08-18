@@ -12,23 +12,34 @@ import { Box,
 
 const Navbar = () => {
   return (
-    <Box>
-      <Container>
-        <Flex>
+    <Box bgColor='black'>
+      <Container w='container.lg' 
+                 maxW='container.xl' 
+                 color='white'
+                 py={8}
+                 >
+        <Flex align='center'>
           <Text>Logo</Text>
-          <UnorderedList>
-            <ListItem>
-              <Link to="/">App Overview</Link>
-            </ListItem>
-            <ListItem>
-              <Link to="/download">Download Guide</Link>
-            </ListItem>
-            <ListItem>
-              <Link to="/our-team/sponsors">Project Sponsors</Link>
-            </ListItem>
-            <ListItem>
-              <Link to="/our-team/developers">Dev Team</Link>
-            </ListItem>
+          <UnorderedList w='full'
+                         textTransform='uppercase'
+                         listStyleType='none'
+                         fontSize='lg'
+                         >
+            <Flex justify='space-evenly'
+                  >
+              <ListItem _hover= {{ fontWeight: 'bold'}}>
+                <Link to="/">App Overview</Link>
+              </ListItem>
+              <ListItem _hover= {{ fontWeight: 'bold'}}>
+                <Link to="/download">Download Guide</Link>
+              </ListItem>
+              <ListItem _hover= {{ fontWeight: 'bold'}}>
+                <Link to="/our-team/sponsors">Project Sponsors</Link>
+              </ListItem>
+              <ListItem _hover= {{ fontWeight: 'bold'}}>
+                <Link to="/our-team/developers">Dev Team</Link>
+              </ListItem>
+            </Flex>
           </UnorderedList>
         </Flex>
       </Container>
