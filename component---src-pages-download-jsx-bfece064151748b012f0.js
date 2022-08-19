@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[21],{8267:function(e,l,t){t.r(l);var r=t(7294),n=t(5696);l.default=function(){return r.createElement(n.Z,null,r.createElement("h1",null,"Download"))}}}]);
-//# sourceMappingURL=component---src-pages-download-jsx-bfece064151748b012f0.js.map
