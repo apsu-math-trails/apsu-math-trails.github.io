@@ -34,10 +34,10 @@ const Navbar = () => {
                 <Link to="/download">Download Guide</Link>
               </ListItem>
               <ListItem _hover= {{ fontWeight: 'bold'}}>
-                <Link to="/our-team/sponsors">Project Sponsors</Link>
+                <Link to="/sponsors">Project Sponsors</Link>
               </ListItem>
               <ListItem _hover= {{ fontWeight: 'bold'}}>
-                <Link to="/our-team/developers">Dev Team</Link>
+                <Link to="/team">Our Team</Link>
               </ListItem>
             </Flex>
           </UnorderedList>

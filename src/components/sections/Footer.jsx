@@ -49,8 +49,8 @@ const Footer = () => {
 
           <Stack align={'flex-start'}>
             <ListHeader weight='bold'>Our Team</ListHeader>
-            <Link to={'/our-team/sponsors'}>Project Sponsors</Link>
-            <Link to={'/our-team/developers'}>Developers</Link>
+            <Link to={'/sponsors'}>Project Sponsors</Link>
+            <Link to={'/developers'}>Devs &amd; Designers</Link>
           </Stack>
 
           <Stack align={'flex-start'} justifySelf='end'>
