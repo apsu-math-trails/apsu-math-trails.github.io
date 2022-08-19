@@ -4,15 +4,15 @@ import PageLayout from '../components/layouts/PageLayout';
 import SEO from '../components/sections/SEO';
 
 export const Head = () => (
-  <SEO title={`Oopsies... Let's go back`}/>
+  <SEO title='Project Sponsors'/>
 );
 
-const Error = () => {
+const sponsors = () => {
   return (
     <PageLayout>
-      <h1>404</h1>
+      <h1>Sponsors</h1>
     </PageLayout>
   );
 };
 
-export default Error;
+export default sponsors;

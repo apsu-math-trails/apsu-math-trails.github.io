@@ -4,15 +4,15 @@ import PageLayout from '../components/layouts/PageLayout';
 import SEO from '../components/sections/SEO';
 
 export const Head = () => (
-  <SEO title={`Oopsies... Let's go back`}/>
+  <SEO title='Our Team'/>
 );
 
-const Error = () => {
+const team = () => {
   return (
     <PageLayout>
-      <h1>404</h1>
+      <h1>team</h1>
     </PageLayout>
   );
 };
 
-export default Error;
+export default team;
