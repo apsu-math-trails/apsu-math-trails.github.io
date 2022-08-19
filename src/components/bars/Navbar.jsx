@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import { Box, 
          Container, 
@@ -19,7 +20,12 @@ const Navbar = () => {
                  py={8}
                  >
         <Flex align='center'>
-          <Text>Logo</Text>
+          <Box>
+          <StaticImage src='../../assets/logos/ap-logo-full-white.png'
+                       alt='Official Austin Peay Logo. Full Horizontal White Text'
+                       placeholder='blurred'
+                       height={60}/>
+          </Box>
           <UnorderedList w='full'
                          textTransform='uppercase'
                          listStyleType='none'
