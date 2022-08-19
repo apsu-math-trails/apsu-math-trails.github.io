@@ -13,8 +13,8 @@ import { Box,
 const Navbar = () => {
   return (
     <Box bgColor='black'>
-      <Container w='container.lg' 
-                 maxW='container.xl' 
+      <Container
+                 maxW='7xl' 
                  color='white'
                  py={8}
                  >
