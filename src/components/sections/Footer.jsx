@@ -20,15 +20,15 @@ import { Box,
          useColorModeValue,
        } from '@chakra-ui/react';
 
-export default function LargeWithAppLinksAndSocial() {
+const Footer = () => {
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      bg={useColorModeValue('black', 'gray.50')}
+      color={useColorModeValue('white', 'gray.700')}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
-            <ListHeader>APSU</ListHeader>
+            <ListHeader weight='bold'>APSU</ListHeader>
             <a target='_blank' href={'https://www.apsu.edu/'}>Official Webite</a>
             <a target='_blank' href={'https://twitter.com/austinpeay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'}>Official Twitter</a>
             <a target='_blank' href={'https://www.instagram.com/austinpeay/?hl=en'}>Official Instagram</a>
@@ -40,7 +40,7 @@ export default function LargeWithAppLinksAndSocial() {
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>App Overview</ListHeader>
+            <ListHeader weight='bold'>App Overview</ListHeader>
             <Link to={'/'}>History</Link>
             <Link to={'/'}>Features</Link>
             <Link to={'/'}>Benefits</Link>
@@ -48,13 +48,13 @@ export default function LargeWithAppLinksAndSocial() {
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Our Team</ListHeader>
+            <ListHeader weight='bold'>Our Team</ListHeader>
             <Link to={'/our-team/sponsors'}>Project Sponsors</Link>
             <Link to={'/our-team/developers'}>Developers</Link>
           </Stack>
 
-          <Stack align={'flex-start'}>
-            <ListHeader>Install App On</ListHeader>
+          <Stack align={'flex-start'} justifySelf='end'>
+            <ListHeader weight='bold'>Install App On</ListHeader>
             <AppStoreBadge />
             <PlayStoreBadge />
           </Stack>
@@ -75,16 +75,16 @@ export default function LargeWithAppLinksAndSocial() {
           align={{ md: 'center' }}>
           <Text>&copy; {new Date().getFullYear()} APSU - College of STEM - All rights reserved.</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Github'} target='_blank' href={'https://github.com/apsu-math-trails'}>
+            <SocialButton label={'Github'} href={'https://github.com/apsu-math-trails'}>
               <FaGithub />
             </SocialButton>
-            <SocialButton label={'Twitter'} target='_blank' href={'https://twitter.com/apsucostem'}>
+            <SocialButton label={'Twitter'} href={'https://twitter.com/apsucostem'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'Instagram'} target='_blank' href={'https://www.instagram.com/apsucostem/?hl=en'}>
+            <SocialButton label={'Instagram'}  href={'https://www.instagram.com/apsucostem/?hl=en'}>
               <FaInstagram />
             </SocialButton>
-            <SocialButton label={'Facebook'} target='_blank' href={'https://www.facebook.com/APSUCoSTEM/'}>
+            <SocialButton label={'Facebook'} href={'https://www.facebook.com/APSUCoSTEM/'}>
               <FaFacebook />
             </SocialButton>
           </Stack>
@@ -93,3 +93,5 @@ export default function LargeWithAppLinksAndSocial() {
     </Box>
   );
 }
+
+export default Footer;
