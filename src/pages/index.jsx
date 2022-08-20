@@ -5,6 +5,7 @@ import SEO from '../components/sections/SEO';
 import Hero from '../components/sections/Hero';
 import PageLead from '../components/sections/PageLead';
 import Features from '../components/sections/Features';
+import Sponsors from '../components/sections/Sponsors';
 import Marketing from '../components/sections/Marketing';
 
 export const Head = () => (
@@ -15,9 +16,10 @@ const index = () => {
   return (
     <PageLayout>
       <Hero />
-      <PageLead bgColor='witeAlpha.100'/>
-      <Features bgColor='witeAlpha.100'/>
-      <Marketing bgColor='witeAlpha.100'/>
+      <PageLead />
+      <Features />
+      <Sponsors />
+      <Marketing />
     </PageLayout>
   );
 };
