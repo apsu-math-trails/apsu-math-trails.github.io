@@ -7,12 +7,12 @@ import { Button,
        } from '@chakra-ui/react';
 
 
-const SocialButton = ({ children, label, href }) => {
+const SocialButton = ({ children, label, href, rounded }) => {
   return (
     <Button
       bg={useColorModeValue('white', 'black')}
       color={useColorModeValue('black', 'white')}
-      rounded={'full'}
+      rounded={rounded}
       w={10}
       h={10}
       cursor={'pointer'}

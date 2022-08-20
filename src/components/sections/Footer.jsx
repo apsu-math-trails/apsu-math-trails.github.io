@@ -75,16 +75,16 @@ const Footer = () => {
           align={{ md: 'center' }}>
           <Text>&copy; {new Date().getFullYear()} APSU - College of STEM - All rights reserved.</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Github'} href={'https://github.com/apsu-math-trails'}>
+            <SocialButton label={'Github'} href={'https://github.com/apsu-math-trails'} rounded='full'>
               <FaGithub />
             </SocialButton>
-            <SocialButton label={'Twitter'} href={'https://twitter.com/apsucostem'}>
+            <SocialButton label={'Twitter'} href={'https://twitter.com/apsucostem'} rounded='full'>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'Instagram'}  href={'https://www.instagram.com/apsucostem/?hl=en'}>
+            <SocialButton label={'Instagram'}  href={'https://www.instagram.com/apsucostem/?hl=en'} rounded='full'>
               <FaInstagram />
             </SocialButton>
-            <SocialButton label={'Facebook'} href={'https://www.facebook.com/APSUCoSTEM/'}>
+            <SocialButton label={'Facebook'} href={'https://www.facebook.com/APSUCoSTEM/'} rounded='full'>
               <FaFacebook />
             </SocialButton>
           </Stack>
