@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Text } from '@chakra-ui/react';
 
-const ListHeader = ({ weight, children }) => {
+const ListHeader = ({ weight, size, children }) => {
   return (
-    <Text fontWeight={weight} fontSize={'lg'} mb={2}>
+    <Text fontWeight={weight} fontSize={size} mb={2}>
       {children}
     </Text>
   );
