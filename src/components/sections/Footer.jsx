@@ -50,7 +50,7 @@ const Footer = () => {
           <Stack align={'flex-start'}>
             <ListHeader weight='bold'>Our Team</ListHeader>
             <Link to={'/sponsors'}>Project Sponsors</Link>
-            <Link to={'/developers'}>Devs &amd; Designers</Link>
+            <Link to={'/developers'}>Devs &amp; Designers</Link>
           </Stack>
 
           <Stack align={'flex-start'} justifySelf='end'>
@@ -67,7 +67,7 @@ const Footer = () => {
         borderColor={useColorModeValue('gray.200', 'gray.700')}>
         <Container
           as={Stack}
-          maxW={'6xl'}
+          maxW={'7xl'}
           py={4}
           direction={{ base: 'column', md: 'row' }}
           spacing={4}

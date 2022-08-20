@@ -15,9 +15,9 @@ const index = () => {
   return (
     <PageLayout>
       <Hero />
-      <PageLead />
-      <Features />
-      <Marketing />
+      <PageLead bgColor='witeAlpha.100'/>
+      <Features bgColor='witeAlpha.100'/>
+      <Marketing bgColor='witeAlpha.100'/>
     </PageLayout>
   );
 };
