@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[21],{8267:function(e,t,n){n.r(t),n.d(t,{Head:function(){return a}});var l=n(7294),r=n(6063),u=n(1334),a=function(){return l.createElement(u.Z,{title:"Download Guide"})};t.default=function(){return l.createElement(r.Z,null,l.createElement("h1",null,"Download"))}}}]);
-//# sourceMappingURL=component---src-pages-download-jsx-3f3162db77d46a2a014c.js.map

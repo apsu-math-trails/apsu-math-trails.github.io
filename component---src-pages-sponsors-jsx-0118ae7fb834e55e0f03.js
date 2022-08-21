@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[514],{842:function(e,t,r){r.r(t),r.d(t,{Head:function(){return o}});var n=r(7294),l=r(3851),u=r(1334),o=function(){return n.createElement(u.Z,{title:"Project Sponsors"})};t.default=function(){return n.createElement(l.Z,null,n.createElement("h1",null,"Sponsors"))}}}]);
-//# sourceMappingURL=component---src-pages-sponsors-jsx-0118ae7fb834e55e0f03.js.map
