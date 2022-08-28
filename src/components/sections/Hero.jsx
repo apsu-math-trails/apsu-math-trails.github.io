@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'gatsby';
+
 import { FaArrowRight } from 'react-icons/fa';
 
 import {
@@ -45,7 +47,7 @@ const Hero = () => {
               size={'lg'}
               w='100%'
               rightIcon={<FaArrowRight />}>
-              Get Started
+              <Link to="/download">Get Started</Link>
             </Button>
           </Stack>
         </Stack>
