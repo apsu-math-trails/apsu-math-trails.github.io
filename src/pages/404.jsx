@@ -5,6 +5,8 @@ import { Link } from 'gatsby';
 import PageLayout from '../components/layouts/PageLayout';
 import SEO from '../components/sections/SEO';
 
+import { FaHome } from 'react-icons/fa';
+
 import { Box,
          Container,
          Flex,
@@ -40,8 +42,11 @@ const Error = () => {
                       boxShadow='lg'
                       color='#fff'
                       bgColor='#C41A3E'
-                      fontSize={16}>
-               <Link to='/'>Go Home</Link>
+                      fontSize={24}
+                      leftIcon={<FaHome size={24}/>}>
+               <Link to='/'>
+                <Text pl={4}>Go Home</Text>
+               </Link>
               </Button>
             </Flex>
           </Box>
