@@ -47,13 +47,21 @@ module.exports = {
         path: `${__dirname}/src/assets/illustrations`
       }
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: 'logos',
-    //     path: `${__dirname}/src/assets/logos`
-    //   }
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'logos',
+        path: `${__dirname}/src/assets/logos`
+      }
+    },
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -69,19 +77,6 @@ module.exports = {
         //   // for locationization options, as {} in the array
         // ],
       }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`, `.md`],
-      },
     },
   ],
 }

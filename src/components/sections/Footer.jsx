@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
+import useSiteMetaData from '../../hooks/useSiteMetadata-hook';
 import AppStoreBadge from '../badges/AppStoreBadge';
 import PlayStoreBadge from '../badges/PlayStoreBadge';
 import SocialButton from '../buttons/SocialButton';
@@ -21,6 +22,11 @@ import { Box,
        } from '@chakra-ui/react';
 
 const Footer = () => {
+  const siteData = useSiteMetaData();
+  console.log(siteData);
+  
+  const { official, costem } = siteData.organization;
+
   return (
     <Box
       bg={useColorModeValue('black', 'gray.50')}
@@ -29,14 +35,14 @@ const Footer = () => {
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
             <ListHeader weight='bold'>APSU</ListHeader>
-            <a target='_blank' href={'https://www.apsu.edu/'}>Official Webite</a>
-            <a target='_blank' href={'https://twitter.com/austinpeay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'}>Official Twitter</a>
-            <a target='_blank' href={'https://www.instagram.com/austinpeay/?hl=en'}>Official Instagram</a>
-            <a target='_blank' href={'https://www.facebook.com/austinpeay/'}>Official Facebook</a>
-            <a target='_blank' href={'https://www.apsu.edu/costem'}>COSTEM Website</a>
-            <a target='_blank' href={'https://twitter.com/apsucostem'}>COSTEM Twitter</a>
-            <a target='_blank' href={'https://www.instagram.com/apsucostem/?hl=en'}>COSTEM Instagram</a>
-            <a target='_blank' href={'https://www.facebook.com/APSUCoSTEM/'}>COSTEM Facebook</a>
+            <a target='_blank' href={official.socialLinks.site}>Official Webite</a>
+            <a target='_blank' href={official.socialLinks.twitter}>Official Twitter</a>
+            <a target='_blank' href={official.socialLinks.instagram}>Official Instagram</a>
+            <a target='_blank' href={official.socialLinks.facebook}>Official Facebook</a>
+            <a target='_blank' href={costem.socialLinks.site}>COSTEM Website</a>
+            <a target='_blank' href={costem.socialLinks.twitter}>COSTEM Twitter</a>
+            <a target='_blank' href={costem.socialLinks.instagram}>COSTEM Instagram</a>
+            <a target='_blank' href={costem.socialLinks.facebook}>COSTEM Facebook</a>
           </Stack>
 
           <Stack align={'flex-start'}>
@@ -44,7 +50,7 @@ const Footer = () => {
             <Link to={'/'}>History</Link>
             <Link to={'/'}>Features</Link>
             <Link to={'/'}>Benefits</Link>
-            <a target='_blank' href={'https://github.com/apsu-math-trails'}>GitHub Repo</a>
+            <a target='_blank' href={costem.socialLinks.github}>GitHub Repo</a>
           </Stack>
 
           <Stack align={'flex-start'}>
@@ -75,16 +81,16 @@ const Footer = () => {
           align={{ md: 'center' }}>
           <Text>&copy; {new Date().getFullYear()} APSU - College of STEM - All rights reserved.</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Github'} href={'https://github.com/apsu-math-trails'} rounded='full'>
+            <SocialButton label={'Github'} href={costem.socialLinks.github} rounded='full'>
               <FaGithub />
             </SocialButton>
-            <SocialButton label={'Twitter'} href={'https://twitter.com/apsucostem'} rounded='full'>
+            <SocialButton label={'Twitter'} href={costem.socialLinks.twitter} rounded='full'>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'Instagram'}  href={'https://www.instagram.com/apsucostem/?hl=en'} rounded='full'>
+            <SocialButton label={'Instagram'}  href={costem.socialLinks.instagram} rounded='full'>
               <FaInstagram />
             </SocialButton>
-            <SocialButton label={'Facebook'} href={'https://www.facebook.com/APSUCoSTEM/'} rounded='full'>
+            <SocialButton label={'Facebook'} href={costem.socialLinks.facebook} rounded='full'>
               <FaFacebook />
             </SocialButton>
           </Stack>
