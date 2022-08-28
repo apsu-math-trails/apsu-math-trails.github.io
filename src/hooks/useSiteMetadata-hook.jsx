@@ -8,6 +8,25 @@ const useSiteMetadata = () => {
         siteMetadata {
           subTitle
           description
+          organization {
+            official {
+              socialLinks {
+                site
+                twitter
+                facebook
+                instagram
+              }
+            }
+            costem {
+              socialLinks {
+                site
+                twitter
+                facebook
+                instagram
+                github
+              }
+            }
+          }
         }
       }
     }
