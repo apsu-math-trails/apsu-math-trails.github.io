@@ -10,6 +10,8 @@ import { Box,
          Text,
          Divider,
          Flex,
+         Avatar,
+         VStack
        } from '@chakra-ui/react';
 
 const BioCard = ({ role, title, body, socialLinks}) => {
@@ -25,22 +27,38 @@ const BioCard = ({ role, title, body, socialLinks}) => {
           <Badge variant='subtle' 
                  colorScheme='red'
                  rounded='md'
-                 boxShadow='inner' 
-                 py={2} px={3}>Developer</Badge>
+                 boxShadow='smz' 
+                 py={2} px={3}
+                 >Developer</Badge>
         </Box>
-        <Heading pb={2}>Title</Heading>
+        <Flex py={4}>
+          <Avatar
+            size='2xl'
+            src={
+              'https://images.unsplash.com/photo-1520810627419-35e362c5dc07?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ'
+            }
+            alt={'Avatar Alt'}
+            pos={'relative'}
+            loading='eager'
+          />
+          <Flex direction='column' gap={2} pl={8}>
+            <Heading>
+              Dr. Yantz
+            </Heading>
+            <Flex gap={2} align='center'>
+              <SocialButtonGray label={'Github'} href={'#'} rounded='md' boxShadow='inner'>
+                <FaGithubSquare />
+              </SocialButtonGray>
+              <SocialButtonGray label={'Linkedin'} href={'#'} rounded='md' boxShadow='inner'>
+                <FaLinkedin />
+              </SocialButtonGray>
+            </Flex>
+          </Flex>
+        </Flex>
         <Divider />
         <Text fontSize='xl' py={8} textAlign='start'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quos eius sit, facilis recusandae reprehenderit non id repellendus. Et, quaerat.
         </Text>
-        <Flex gap={2} align='left' pt={3}  borderTop='1px' borderColor='gray.100' maxW='20%' w='20%'>
-          <SocialButtonGray label={'Github'} href={'#'} rounded='lg' boxShadow='md'>
-            <FaGithubSquare />
-          </SocialButtonGray>
-          <SocialButtonGray label={'Linkedin'} href={'#'} rounded='lg' boxShadow='md'>
-            <FaLinkedin />
-          </SocialButtonGray>
-        </Flex>
       </Flex>
     </Box>
   );
