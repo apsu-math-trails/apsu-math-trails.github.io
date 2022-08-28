@@ -17,8 +17,9 @@ const Sponsors = () => {
         <VStack>
           <Heading fontSize='6xl' color='#C41E3A'>Our Sponsors.</Heading>
           <HStack spacing={10} pt={16} divider={<StackDivider borderColor='blackAlpha.400' />}>
-            <StaticImage src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Google_2015_logo_colorless_mourning_period.svg/1024px-Google_2015_logo_colorless_mourning_period.svg.png' width={200}/>
-            <StaticImage src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Google_2015_logo_colorless_mourning_period.svg/1024px-Google_2015_logo_colorless_mourning_period.svg.png' width={200}/>
+            <StaticImage src='../../assets/logos/tides-foundation-logo.png' width={250}/>
+            <StaticImage src='../../assets/logos/google-logo-black.png' width={200}/>
+            <StaticImage src='../../assets/logos/ap-full-logo-horizontal-black.png' width={200}/>
           </HStack>
         </VStack>
       </Container>
